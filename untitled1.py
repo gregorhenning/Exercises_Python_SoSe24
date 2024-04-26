@@ -12,3 +12,4 @@ def cagr_berechnung(AK,EK,t):
     return CAGR 
 
 
+
