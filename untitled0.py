@@ -1,26 +1,26 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 17 13:07:31 2024
+Created on Fri May 24 12:32:40 2024
 
 @author: henningG
 """
 
-def vokon_zählen(wort):
+
+def buchstaben_ändern(string, buchstabe):
     vokale = "aeiou"
     
-    vokale_count = 0
-    konsonanten_count = 0
-    
-    for vokal in wort.lower():
-        if vokal.isalpha():
-            if vokal in vokale:
-                vokale_count += 1
-        else:
-                konsonanten_count += 1
-    print(f" Es gibt: {vokale_count} Vokale und {konsonanten_count} Konsonanten")
-    
-vokon_zählen("Hallo, Berlin")    
 
-    
-    
+    def buchstabe_ersetzen(x, y, z):
+        x_list = list(x.lower())
         
+        for i in range(len(x_list)):
+        
+            if x_list[i] == y:
+                x_list[i] = z
+            
+        return "".join(x_list)
+    
+    for v in vokale:
+            print(buchstabe_ersetzen( x = string, y = buchstabe, z = v), end = " ")
+
+buchstaben_ändern("Banana", "a")
